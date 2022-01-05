@@ -9,6 +9,7 @@ services:
                 - ALL
         sysctls:
                 - net.ipv4.conf.all.accept_redirects=1
+                - net.ipv4.conf.all.secure_redirects=0
         privileged: true
         networks:
             net-10.9.0.0:

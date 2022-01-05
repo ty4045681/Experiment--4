@@ -20,6 +20,6 @@ def spoof_pkt(pkt):
    else: 
        send(newpkt)
 
-f = 'tcp' 
+f = 'tcp and host 192.168.60.5' 
 pkt = sniff(iface='eth0', filter=f, prn=spoof_pkt)
 
